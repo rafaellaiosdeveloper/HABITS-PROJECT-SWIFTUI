@@ -67,6 +67,7 @@ extension SignUpView{
             error: "e-mail inválido",
             failure: !viewModel.email.isEmail()
         )
+        .autocapitalization(.none)
     }
 }
 
@@ -101,7 +102,7 @@ extension SignUpView{
             placeholder: "Entre com seu celular *",
             keyboard: .numberPad,
             error: "Entre com o DDD + 8 ou 9 digitos",
-            failure: viewModel.phone.count < 10 || viewModel.phone.count <= 12
+            failure: viewModel.phone.count < 10 || viewModel.phone.count >= 12
         )
     }
 }
@@ -113,7 +114,7 @@ extension SignUpView{
             placeholder: "Entre com sua data de nascimento *",
             keyboard: .default,
             error: "Data deve ser dd/MM/yyyy",
-            failure: viewModel.phone.count != 10
+            failure: viewModel.birthday.count != 10
         )
     }
 }

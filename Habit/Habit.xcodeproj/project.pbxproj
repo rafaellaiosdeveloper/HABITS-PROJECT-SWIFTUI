@@ -16,6 +16,8 @@
 		916FFBB32CF25263003A3B26 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FFBB22CF25263003A3B26 /* SignInView.swift */; };
 		916FFBB52CF252F9003A3B26 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FFBB42CF252F9003A3B26 /* SignInViewModel.swift */; };
 		916FFBB72CF25437003A3B26 /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FFBB62CF25437003A3B26 /* SplashViewRouter.swift */; };
+		9194C94C2D0A5F3F002BD0FD /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194C94B2D0A5F3F002BD0FD /* WebServices.swift */; };
+		9194C94E2D0A68D0002BD0FD /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194C94D2D0A68CF002BD0FD /* SignUpRequest.swift */; };
 		919F1C7D2CFA9FBD00FC7021 /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F1C7C2CFA9FBD00FC7021 /* SignInViewRouter.swift */; };
 		919F1C832CFAA03000FC7021 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F1C822CFAA03000FC7021 /* HomeView.swift */; };
 		919F1C852CFAA05700FC7021 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F1C842CFAA05700FC7021 /* HomeViewModel.swift */; };
@@ -42,6 +44,8 @@
 		916FFBB22CF25263003A3B26 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		916FFBB42CF252F9003A3B26 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		916FFBB62CF25437003A3B26 /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
+		9194C94B2D0A5F3F002BD0FD /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		9194C94D2D0A68CF002BD0FD /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		919F1C7C2CFA9FBD00FC7021 /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
 		919F1C822CFAA03000FC7021 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		919F1C842CFAA05700FC7021 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -168,6 +172,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9194C94A2D0A5F22002BD0FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9194C94B2D0A5F3F002BD0FD /* WebServices.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		919F1C7E2CFAA00100FC7021 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				91ECDFBB2CFCA1CC00D57302 /* SignUpUIState.swift */,
+				9194C94D2D0A68CF002BD0FD /* SignUpRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +277,7 @@
 		91ECDFB72CFC9C0600D57302 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9194C94A2D0A5F22002BD0FD /* Network */,
 				91C28FA12CFD41B500690A02 /* Lang */,
 				91ECDFC02CFCD6A700D57302 /* View */,
 				91ECDFB82CFC9C0D00D57302 /* Model */,
@@ -364,6 +378,7 @@
 			files = (
 				9125A7622CED700300EF410A /* SplashUIState.swift in Sources */,
 				919F1C8D2CFAA4B700FC7021 /* SignUpViewModel.swift in Sources */,
+				9194C94C2D0A5F3F002BD0FD /* WebServices.swift in Sources */,
 				919F1C852CFAA05700FC7021 /* HomeViewModel.swift in Sources */,
 				91C28FA52CFD455A00690A02 /* LoadingButtonView.swift in Sources */,
 				91C28FA32CFD41F400690A02 /* String+Extension.swift in Sources */,
@@ -380,6 +395,7 @@
 				915BA2A52CF95AB500A45A32 /* SignInUIState.swift in Sources */,
 				91C28FA02CFD3D7C00690A02 /* CustomTextFieldStyle.swift in Sources */,
 				91ECDFC22CFCD6BF00D57302 /* EditTextView.swift in Sources */,
+				9194C94E2D0A68D0002BD0FD /* SignUpRequest.swift in Sources */,
 				916FFBB72CF25437003A3B26 /* SplashViewRouter.swift in Sources */,
 				916FFBB32CF25263003A3B26 /* SignInView.swift in Sources */,
 			);
