@@ -3,4 +3,114 @@
    uuid = "68EAD694-C98B-4FA3-BC56-3A1E1C85D752"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2A3077B-C1DD-47F3-ABD6-0063CBA2BAD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit/Common/Network/WebServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "postUser(request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2A3077B-C1DD-47F3-ABD6-0063CBA2BAD4 - 6744990795b7efb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Habit.WebServices.Result) -&gt; () in static Habit.WebServices.postUser(request: Habit.SignUpRequest) -&gt; ()"
+                  moduleName = "Habit.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rafaella/Documents/RAFA%20DEV/SwiftUI/HABITS-PROJECT-SWIFTUI/Habit/Habit/Common/Network/WebServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82">
+               </Location>
+               <Location
+                  uuid = "A2A3077B-C1DD-47F3-ABD6-0063CBA2BAD4 - 6744990795b7efb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Habit.WebServices.Result) -&gt; () in static Habit.WebServices.postUser(request: Habit.SignUpRequest) -&gt; ()"
+                  moduleName = "Habit.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rafaella/Documents/RAFA%20DEV/SwiftUI/HABITS-PROJECT-SWIFTUI/Habit/Habit/Common/Network/WebServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44E9B10A-E104-4DDB-BF5F-D1DFC3CD1699"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit/Common/Network/WebServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "call(path:body:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44E9B10A-E104-4DDB-BF5F-D1DFC3CD1699 - 73ce855ac25bb8c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Habit.WebServices.call&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Encodable&gt;(path: Habit.WebServices.Endpoint, body: &#x3c4;_0_0, completion: (Habit.WebServices.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "Habit.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rafaella/Documents/RAFA%20DEV/SwiftUI/HABITS-PROJECT-SWIFTUI/Habit/Habit/Common/Network/WebServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+               <Location
+                  uuid = "44E9B10A-E104-4DDB-BF5F-D1DFC3CD1699 - 73ce855ac25bb8c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Habit.WebServices.call&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Encodable&gt;(path: Habit.WebServices.Endpoint, body: &#x3c4;_0_0, completion: (Habit.WebServices.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "Habit.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rafaella/Documents/RAFA%20DEV/SwiftUI/HABITS-PROJECT-SWIFTUI/Habit/Habit/Common/Network/WebServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59D248EA-6FCB-4A31-BC1B-F51EA738044D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit/Common/Network/WebServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "call(path:body:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
