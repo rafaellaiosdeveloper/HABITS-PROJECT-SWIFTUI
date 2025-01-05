@@ -46,11 +46,37 @@ class SignUpViewModel: ObservableObject{
                                                     document: document,
                                                     phone: phone,
                                                     birthday: birthday,
-                                                    gender: gender.index))
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
-//            self.uiState = .success
-//            self.publisher.send(true)
-//        }
+                                                    gender: gender.index)) { (successResponse,errorResponse) in
+            if let error = errorResponse{
+                DispatchQueue.main.async {
+                    self.uiState = .error(error.detail)
+                    
+                }
+            }
+            if let success = successResponse{
+                
+                WebServices.login(request: SignInRequest(email: self.email, password: self.password)) { (successResponse,errorResponse) in
+                    
+                    if let errorSignIn = errorResponse{
+                        DispatchQueue.main.async {
+                            self.uiState = .error(errorSignIn.detail.message)
+                        }
+                    }
+                    if let successSignIn = successResponse{
+                        DispatchQueue.main.async {
+                            print(successSignIn)
+                            self.publisher.send(success)
+                                self.uiState = .success
+                        }
+                    }
+                }
+            }
+        }
+        
+        //        DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
+        //            self.uiState = .success
+        //            self.publisher.send(true)
+        //        }
     }
 }
 

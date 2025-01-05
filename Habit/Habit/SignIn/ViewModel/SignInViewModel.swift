@@ -21,9 +21,10 @@ class SignInViewModel: ObservableObject{
     init(){
         cancellable = publisher.sink{ value in
             print("Usuário criado! goToHome: \(value)")
-            
             if value{
-                self.uiState = .goToHomeScreen
+                DispatchQueue.main.async {
+                    self.uiState = .goToHomeScreen
+                }
             }
         }
     }
@@ -36,15 +37,38 @@ class SignInViewModel: ObservableObject{
     
     func login(){
         self.uiState = .loading
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
-           
-            //chamado depois de 1 segundos
-            self.uiState = .goToHomeScreen
-            //            self.uiState = .error("Erro de teste")
+        
+        WebServices.login(request: SignInRequest(email: email, password: password)) { (successResponse,errorResponse) in
+            
+            if let error = errorResponse{
+                DispatchQueue.main.async {
+                    self.uiState = .error(error.detail.message)
+
+                }
+            }
+            if let success = successResponse{
+                print(success)
+                
+                    DispatchQueue.main.async {
+                        self.uiState = .goToHomeScreen
+
+                    }
+                
+            }
         }
+            
+        }
+        
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+//           
+//            //chamado depois de 1 segundos
+//            self.uiState = .goToHomeScreen
+//            //            self.uiState = .error("Erro de teste")
+//        }
     }
     
-}
+
 extension SignInViewModel{
     func homeView() -> some View{
         return SignInViewRouter.makeHomeView()
