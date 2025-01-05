@@ -10,6 +10,8 @@
 		911ABCE02D29E6DA009D77DB /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911ABCDF2D29E6DA009D77DB /* SignInRequest.swift */; };
 		911ABCE22D29E7DA009D77DB /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911ABCE12D29E7DA009D77DB /* SignInResponse.swift */; };
 		911ABCE42D2AB8A3009D77DB /* SignInErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911ABCE32D2AB8A3009D77DB /* SignInErrorResponse.swift */; };
+		911ABCE82D2AC2B3009D77DB /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911ABCE72D2AC2B3009D77DB /* SignInInteractor.swift */; };
+		911ABCEA2D2AC4DA009D77DB /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911ABCE92D2AC4DA009D77DB /* RemoteDataSource.swift */; };
 		9125A7582CED6F2000EF410A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9125A7522CED6F2000EF410A /* Preview Assets.xcassets */; };
 		9125A7592CED6F2000EF410A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9125A7542CED6F2000EF410A /* Assets.xcassets */; };
 		9125A75B2CED6F2000EF410A /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9125A7562CED6F2000EF410A /* HabitApp.swift */; };
@@ -42,6 +44,8 @@
 		911ABCDF2D29E6DA009D77DB /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		911ABCE12D29E7DA009D77DB /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
 		911ABCE32D2AB8A3009D77DB /* SignInErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInErrorResponse.swift; sourceTree = "<group>"; };
+		911ABCE72D2AC2B3009D77DB /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		911ABCE92D2AC4DA009D77DB /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		9125A7412CED6EE000EF410A /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9125A7522CED6F2000EF410A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9125A7542CED6F2000EF410A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911ABCE52D2AC29C009D77DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				911ABCE72D2AC2B3009D77DB /* SignInInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		9125A7382CED6EE000EF410A = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +162,7 @@
 		916FFBAE2CF251FF003A3B26 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				911ABCE52D2AC29C009D77DB /* Interactor */,
 				916FFBB12CF25225003A3B26 /* View */,
 				916FFBAF2CF25209003A3B26 /* ViewModel */,
 				916FFBB02CF2521D003A3B26 /* Model */,
@@ -189,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				9194C94B2D0A5F3F002BD0FD /* WebServices.swift */,
+				911ABCE92D2AC4DA009D77DB /* RemoteDataSource.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -394,6 +408,7 @@
 				91E13FA52D27780600BC46FB /* SignUpResponse.swift in Sources */,
 				9125A7622CED700300EF410A /* SplashUIState.swift in Sources */,
 				919F1C8D2CFAA4B700FC7021 /* SignUpViewModel.swift in Sources */,
+				911ABCEA2D2AC4DA009D77DB /* RemoteDataSource.swift in Sources */,
 				9194C94C2D0A5F3F002BD0FD /* WebServices.swift in Sources */,
 				919F1C852CFAA05700FC7021 /* HomeViewModel.swift in Sources */,
 				911ABCE42D2AB8A3009D77DB /* SignInErrorResponse.swift in Sources */,
@@ -403,6 +418,7 @@
 				91ECDFBE2CFCA26B00D57302 /* SignUpViewRouter.swift in Sources */,
 				91ECDFBC2CFCA1CC00D57302 /* SignUpUIState.swift in Sources */,
 				9125A75B2CED6F2000EF410A /* HabitApp.swift in Sources */,
+				911ABCE82D2AC2B3009D77DB /* SignInInteractor.swift in Sources */,
 				916FFBB52CF252F9003A3B26 /* SignInViewModel.swift in Sources */,
 				919F1C8B2CFAA49D00FC7021 /* SignUpView.swift in Sources */,
 				91ECDFBA2CFC9C1A00D57302 /* Gender.swift in Sources */,

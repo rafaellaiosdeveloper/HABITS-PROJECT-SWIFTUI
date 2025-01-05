@@ -134,7 +134,7 @@ extension SignInView{
     }
 }
 #Preview {
-    let viewModel = SignInViewModel()
+    let viewModel = SignInViewModel(interactor: SignInInteractor())
     SignInView(viewModel: viewModel)
 }
 
